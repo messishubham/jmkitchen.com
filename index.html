@@ -238,7 +238,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--clay);outline-offse
 @keyframes tick{to{transform:translateX(-50%)}}
 
 /* ============ Shared scaffolding ============ */
-.section{padding:clamp(5.5rem,10vw,9.5rem) var(--pad)}
+.section{padding:clamp(4rem,7vw,6.5rem) var(--pad)}
 .section-oat{background:var(--oat)}
 .section-ink{background:var(--ink);color:var(--ivory)}
 .wrap{max-width:1360px;margin:0 auto}
@@ -255,7 +255,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--clay);outline-offse
 /* ============ Story — split editorial with overlap ============ */
 .story-grid{
   display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);
-  gap:clamp(2.5rem,7vw,7rem);align-items:center;
+  gap:clamp(2.5rem,5vw,5rem);align-items:center;
 }
 .story-media{position:relative}
 .story-media .main{aspect-ratio:4/5}
@@ -281,11 +281,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--clay);outline-offse
 /* ============ Produce — masonry ============ */
 .produce-head{
   display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);
-  gap:2rem;align-items:end;margin-bottom:clamp(3rem,5vw,4.5rem);
+  gap:2rem;align-items:end;margin-bottom:clamp(2.5rem,4vw,3.5rem);
 }
 .produce-masonry{
   display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:105px;
-  gap:clamp(.875rem,1.8vw,1.5rem);margin-bottom:clamp(3rem,5vw,4.5rem);
+  gap:clamp(.875rem,1.8vw,1.5rem);margin-bottom:clamp(2.5rem,4vw,3.5rem);
 }
 .produce-masonry .frame:nth-child(1){grid-row:span 4}
 .produce-masonry .frame:nth-child(2){grid-row:span 5}
@@ -302,7 +302,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--clay);outline-offse
 /* ============ Menu — image-led category cards ============ */
 .menu-head{
   display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;
-  gap:1.5rem;margin-bottom:clamp(2.5rem,4.5vw,4rem);
+  gap:1.5rem;margin-bottom:clamp(2.25rem,3.5vw,3rem);
 }
 .menu-cards{
   display:grid;grid-template-columns:repeat(6,1fr);
@@ -321,12 +321,24 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--clay);outline-offse
 .menu-card:hover h3{color:var(--green)}
 .menu-card .num{font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--clay);flex:none}
 .menu-card p{font-size:.875rem;color:var(--stone)}
+.menu-card .duo{display:grid;grid-template-columns:1fr 1fr;gap:clamp(.75rem,1.4vw,1.125rem);margin-bottom:1.5rem}
+.menu-card .duo .frame{aspect-ratio:4/5;margin-bottom:0}
+.menu-favourites{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(1rem,2vw,1.5rem);
+  margin-top:clamp(2.25rem,3.5vw,3rem);
+}
+.menu-favourites figure{margin:0}
+.menu-favourites .frame{aspect-ratio:1/1}
+.menu-favourites figcaption{
+  margin-top:.875rem;font-size:.5625rem;font-weight:600;
+  letter-spacing:.26em;text-transform:uppercase;color:var(--stone);
+}
 .menu-foot{
-  display:flex;flex-direction:column;align-items:center;gap:1.375rem;margin-top:clamp(3rem,5vw,4.5rem);text-align:center;
+  display:flex;flex-direction:column;align-items:center;gap:1.25rem;margin-top:clamp(2.25rem,3.5vw,3rem);text-align:center;
 }
 
 /* ============ Space — photo collage with panel ============ */
-.space{padding:clamp(4.5rem,8vw,7.5rem) 0}
+.space{padding:clamp(4rem,7vw,6.5rem) 0}
 .space-stage{
   display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);
   gap:clamp(1rem,2vw,1.5rem);align-items:stretch;
@@ -355,12 +367,12 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--clay);outline-offse
 .space-strip .frame{aspect-ratio:4/5}
 
 /* ============ Community — collaborations ============ */
-.community-head{max-width:720px;margin-bottom:clamp(3rem,5vw,4.5rem)}
+.community-head{max-width:720px;margin-bottom:clamp(2.5rem,4vw,3.5rem)}
 .community-head h2{margin-bottom:1.5rem}
 .collab-rows{
-  display:flex;flex-direction:column;gap:clamp(3.5rem,6vw,5.5rem);
-  border-top:1px solid var(--line);padding-top:clamp(3rem,5vw,4rem);
-  margin-bottom:clamp(3rem,5vw,4rem);
+  display:flex;flex-direction:column;gap:clamp(3rem,5vw,4.5rem);
+  border-top:1px solid var(--line);padding-top:clamp(2.5rem,4vw,3.5rem);
+  margin-bottom:clamp(2.5rem,4vw,3rem);
 }
 .collab-row{
   display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);
@@ -381,7 +393,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--clay);outline-offse
 /* ============ Instagram ============ */
 .insta-head{
   display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;
-  gap:1.5rem;margin-bottom:clamp(2.5rem,4.5vw,3.75rem);
+  gap:1.5rem;margin-bottom:clamp(2.25rem,3.5vw,3rem);
 }
 .insta-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(.75rem,1.4vw,1.125rem)}
 .insta-grid .frame{aspect-ratio:1/1;display:block}
@@ -391,13 +403,15 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--clay);outline-offse
 .proof{max-width:1100px;margin:0 auto;text-align:center}
 .proof .eyebrow{justify-content:center}
 .proof .eyebrow::after{display:none}
-.proof h2{margin-bottom:clamp(3rem,5vw,4.5rem)}
+.proof h2{margin-bottom:clamp(2.5rem,4vw,3.5rem)}
 .proof-strip{
   display:grid;grid-template-columns:repeat(3,1fr);
   border-top:1px solid var(--line);border-bottom:1px solid var(--line);
   margin-bottom:3rem;
 }
-.proof-cell{padding:2.75rem 2rem;position:relative}
+.proof-cell{display:block;padding:2.25rem 2rem;position:relative;color:inherit}
+.proof-cell h3{transition:color .3s var(--ease)}
+a.proof-cell:hover h3,a.proof-cell:focus-visible h3{color:var(--green)}
 .proof-cell+.proof-cell::before{
   content:"";position:absolute;left:0;top:1.75rem;bottom:1.75rem;width:1px;background:var(--line);
 }
@@ -410,7 +424,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--clay);outline-offse
 .proof .microcopy{display:block;margin-bottom:2.5rem}
 
 /* ============ Catering — immersive dark ============ */
-.catering{display:grid;grid-template-columns:minmax(0,11fr) minmax(0,9fr);min-height:84vh}
+.catering{display:grid;grid-template-columns:minmax(0,11fr) minmax(0,9fr);min-height:72vh}
 .catering-media{position:relative;overflow:hidden}
 .catering-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .catering-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,20,17,0) 65%,rgba(23,20,17,.5))}
@@ -461,13 +475,13 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--clay);outline-offse
 }
 
 /* ============ Footer ============ */
-.footer{background:var(--ink);color:#C9C2B4;padding:clamp(4.5rem,8vw,7rem) var(--pad) 2.75rem}
+.footer{background:var(--ink);color:#C9C2B4;padding:clamp(4rem,6vw,5.5rem) var(--pad) 2.5rem}
 .footer-signoff{
   font-family:var(--serif);font-style:italic;font-weight:330;
   font-size:clamp(2.25rem,4.5vw,3.75rem);color:var(--ivory);
-  margin-bottom:clamp(3rem,5vw,4.5rem);line-height:1.15;
+  margin-bottom:clamp(2.5rem,4vw,3.5rem);line-height:1.15;
 }
-.footer .brand{color:var(--ivory);margin-bottom:3.25rem}
+.footer .brand{color:var(--ivory);margin-bottom:2.5rem}
 .footer-grid{
   display:grid;grid-template-columns:minmax(0,2fr) repeat(3,minmax(0,1fr));
   gap:clamp(2rem,4vw,4.5rem);padding-bottom:3.5rem;border-bottom:1px solid var(--line-dark);
@@ -531,8 +545,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--clay);outline-offse
   .cta-strip .btn{width:100%;margin-right:0}
   .hero-ctas{align-self:stretch}
   .hero-ctas .btn{min-width:0}
-  .story-grid{grid-template-columns:1fr;gap:5rem}
-  .story-media{order:-1;margin-bottom:1.5rem}
+  .story-grid{grid-template-columns:1fr;gap:1rem}
+  .story-media{order:-1;margin-bottom:3rem}
   .story-media .main{aspect-ratio:4/3}
   .story-media .detail{left:-.5rem;bottom:-2.5rem;width:52%;border-width:8px}
   .produce-head{grid-template-columns:1fr}
@@ -554,6 +568,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--clay);outline-offse
   .space-strip .frame{flex:0 0 76%;scroll-snap-align:center}
   .collab-media{grid-template-columns:1fr 1fr}
   .insta-grid{grid-template-columns:repeat(2,1fr)}
+  .menu-favourites{grid-template-columns:repeat(2,1fr)}
   .visit-ctas{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr 1fr}
   .footer-about{grid-column:1/-1}
@@ -712,15 +727,27 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--clay);outline-offse
         <p>Comfort food with a Jaipur Modern sensibility.</p>
       </article>
       <article class="menu-card reveal">
-        <div class="frame"><img src="./dish-tiramisu.jpeg" alt="Coffee and dessert at JM Kitchen C Scheme" loading="lazy" width="606" height="455"></div>
+        <div class="duo">
+          <div class="frame"><img src="./dish-tiramisu.jpeg" alt="Coffee and tiramisu dessert at JM Kitchen C Scheme" loading="lazy" width="606" height="455"></div>
+          <div class="frame"><img src="./dish-banana-brulee.jpeg" alt="Banana brûlée oatmeal at Jaipur Modern Kitchen Jaipur" loading="lazy" width="606" height="455"></div>
+        </div>
         <h3><span class="num" aria-hidden="true">04</span>Coffee, Juices &amp; Desserts</h3>
         <p>For late mornings, quick meetings and unhurried afternoons.</p>
       </article>
       <article class="menu-card reveal reveal-d1">
-        <div class="frame"><img src="./dish-smoothie-bowl.jpeg" alt="Vegan-friendly smoothie bowl at Jaipur Modern Kitchen" loading="lazy" width="606" height="455"></div>
+        <div class="duo">
+          <div class="frame"><img src="./dish-smoothie-bowl.jpeg" alt="Vegan-friendly smoothie bowl at Jaipur Modern Kitchen" loading="lazy" width="606" height="455"></div>
+          <div class="frame"><img src="./dish-artichoke-salad.jpeg" alt="Artichoke and lentil salad at JM Kitchen, C Scheme Jaipur" loading="lazy" width="606" height="455"></div>
+        </div>
         <h3><span class="num" aria-hidden="true">05</span>Vegan-Friendly &amp; Gluten-Free Friendly</h3>
         <p>Considered options for cleaner, lighter and more flexible dining.</p>
       </article>
+    </div>
+    <div class="menu-favourites">
+      <figure class="reveal"><div class="frame"><img src="./dish-parsi-pora.jpeg" alt="Parsi pora omelette from the brunch menu at Jaipur Modern Kitchen" loading="lazy" width="606" height="755"></div><figcaption>Parsi Pora Omelette</figcaption></figure>
+      <figure class="reveal reveal-d1"><div class="frame"><img src="./dish-satay.jpeg" alt="Satay plate at JM Kitchen Jaipur" loading="lazy" width="606" height="755"></div><figcaption>Satay</figcaption></figure>
+      <figure class="reveal reveal-d2"><div class="frame"><img src="./dish-burrata-roja.jpeg" alt="Burrata roja pizza at Jaipur Modern Kitchen" loading="lazy" width="580" height="710"></div><figcaption>Burrata Roja</figcaption></figure>
+      <figure class="reveal reveal-d3"><div class="frame"><img src="./dish-rosti.jpeg" alt="Rösti plate at JM Kitchen C Scheme Jaipur" loading="lazy" width="606" height="755"></div><figcaption>Rösti</figcaption></figure>
     </div>
     <div class="menu-foot reveal">
       <a class="btn" href="https://www.zomato.com/jaipur/jaipur-modern-kitchen-c-scheme" target="_blank" rel="noopener">View Full Menu</a>
@@ -807,8 +834,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--clay);outline-offse
     </div>
     <div class="insta-grid">
       <a class="frame reveal" href="https://www.instagram.com/jaipurmodernkitchen/" target="_blank" rel="noopener" aria-label="JM Kitchen on Instagram"><img src="./dish-burger.jpeg" alt="House burger at Jaipur Modern Kitchen, C Scheme Jaipur" loading="lazy" width="606" height="755"></a>
-      <a class="frame reveal reveal-d1" href="https://www.instagram.com/jaipurmodernkitchen/" target="_blank" rel="noopener" aria-label="JM Kitchen on Instagram"><img src="./dish-burrata-roja.jpeg" alt="Burrata roja pizza at JM Kitchen Jaipur" loading="lazy" width="580" height="710"></a>
-      <a class="frame reveal reveal-d2" href="https://www.instagram.com/jaipurmodernkitchen/" target="_blank" rel="noopener" aria-label="JM Kitchen on Instagram"><img src="./dish-rosti.jpeg" alt="Rösti breakfast plate at Jaipur Modern Kitchen" loading="lazy" width="606" height="755"></a>
+      <a class="frame reveal reveal-d1" href="https://www.instagram.com/jaipurmodernkitchen/" target="_blank" rel="noopener" aria-label="JM Kitchen on Instagram"><img src="./collab-subko-1.jpeg" alt="Specialty coffee being ground at JM Kitchen Jaipur" loading="lazy" width="591" height="755"></a>
+      <a class="frame reveal reveal-d2" href="https://www.instagram.com/jaipurmodernkitchen/" target="_blank" rel="noopener" aria-label="JM Kitchen on Instagram"><img src="./collab-subko-3.jpeg" alt="Coffee bar moments at Jaipur Modern Kitchen" loading="lazy" width="591" height="755"></a>
       <a class="frame reveal" href="https://www.instagram.com/jaipurmodernkitchen/" target="_blank" rel="noopener" aria-label="JM Kitchen on Instagram"><img src="./dish-bufala-salad.jpeg" alt="Mozzarella di bufala salad at JM Kitchen C Scheme" loading="lazy" width="606" height="755"></a>
       <a class="frame reveal reveal-d1" href="https://www.instagram.com/jaipurmodernkitchen/" target="_blank" rel="noopener" aria-label="JM Kitchen on Instagram"><img src="./dish-noodle-bowl.jpeg" alt="Fresh noodle bowl at Jaipur Modern Kitchen Jaipur" loading="lazy" width="606" height="755"></a>
       <a class="frame reveal reveal-d2" href="https://www.instagram.com/jaipurmodernkitchen/" target="_blank" rel="noopener" aria-label="JM Kitchen on Instagram"><img src="./dish-chevre-pizza.jpeg" alt="Caramelised onion and chèvre pizza at JM Kitchen Jaipur" loading="lazy" width="606" height="755"></a>
@@ -822,21 +849,21 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--clay);outline-offse
     <p class="eyebrow reveal"><span class="n">07</span> Quiet Proof</p>
     <h2 class="h2 reveal">Recognised for <span class="it">All-Day Dining</span></h2>
     <div class="proof-strip">
-      <div class="proof-cell reveal">
-        <span class="src">EazyDiner Foodie Awards, Jaipur</span>
+      <a class="proof-cell reveal" href="https://www.eazydiner.com/jaipur/jaipur-modern-kitchen-c-scheme-jaipur-645230" target="_blank" rel="noopener">
+        <span class="src">EazyDiner Foodie Awards, Jaipur ↗</span>
         <h3>Best All-Day Dining Restaurant — Standalone</h3>
         <span class="yr">2025</span>
-      </div>
-      <div class="proof-cell reveal reveal-d1">
-        <span class="src">Tripadvisor</span>
+      </a>
+      <a class="proof-cell reveal reveal-d1" href="https://www.tripadvisor.com/Restaurant_Review-g304555-d6369738-Reviews-Jaipur_Modern_Store_Kitchen-Jaipur_Jaipur_District_Rajasthan.html" target="_blank" rel="noopener">
+        <span class="src">Tripadvisor ↗</span>
         <h3>Travellers' Choice — Top 10% Worldwide</h3>
         <span class="yr">2025</span>
-      </div>
-      <div class="proof-cell reveal reveal-d2">
-        <span class="src">Zomato &amp; Google</span>
+      </a>
+      <a class="proof-cell reveal reveal-d2" href="https://www.zomato.com/jaipur/jaipur-modern-kitchen-c-scheme" target="_blank" rel="noopener">
+        <span class="src">Zomato &amp; Google ↗</span>
         <h3>Among C Scheme's most-loved all-day cafés</h3>
         <span class="yr">Ongoing</span>
-      </div>
+      </a>
     </div>
     <span class="microcopy reveal">Open daily in C Scheme, Jaipur.</span>
     <div class="reveal">
